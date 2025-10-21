@@ -1,4 +1,4 @@
-<img width="1381" height="852" alt="image" src="https://github.com/user-attachments/assets/0b7127e8-68c1-4196-a5c9-96f47712be18" /># EX-16-LEFT-SHIFT-OPERATION
+# EX-16-LEFT-SHIFT-OPERATION
 ## AIM
 Write a C Program to perform bitwise OR operation of two integers. 
 

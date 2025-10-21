@@ -1,6 +1,6 @@
-# EX-16-LEFT-SHIFT-OPERATION
+<img width="1381" height="852" alt="image" src="https://github.com/user-attachments/assets/0b7127e8-68c1-4196-a5c9-96f47712be18" /># EX-16-LEFT-SHIFT-OPERATION
 ## AIM
-To write a C Program to perform the basic left shift operation for 44 integer number with 3 shifts.
+Write a C Program to perform bitwise OR operation of two integers. 
 
 ## ALGORITHM
 1.	Start the program.
@@ -10,9 +10,17 @@ To write a C Program to perform the basic left shift operation for 44 integer nu
 5.	Stop the program.
 
 ## PROGRAM
+#include<stdio.h>
+int main()
+{
+    int a,b;
+    scanf("%d %d", &a, &b);
+    printf("Bitwise-OR result is = %d", a|b);
+}
 
 ## OUTPUT
 
+<img width="1485" height="852" alt="Screenshot 2025-10-21 161932" src="https://github.com/user-attachments/assets/f36a82eb-95ba-4766-a6ad-97f2ca9b110a" />
 
 
 
@@ -36,7 +44,7 @@ Thus the program to perform the basic left shift operation for 44 integer number
 
 ## AIM
 
-Write a C Program to check whether the two numbers are equal or not using simple if statement.
+Write a C Program to reverse the case of input character using if else
 
 ## ALGORITHM
 
@@ -47,9 +55,21 @@ Write a C Program to check whether the two numbers are equal or not using simple
 5.	Stop the program.
 
 ## PROGRAM
+#include<stdio.h>
+int main()
+{
+    char n;
+    scanf("%c", &n);
+    char a=n-32;
+    char b=n+32;
+    if(n>='a' && n<='z') printf("Reverse case of %c is :  %c", n, a);
+    else if(n>='A' && n<='Z') printf("Reverse case of %c is :  %c", n, b);
+}
 
 
 ## OUTPUT
+<img width="1345" height="875" alt="Screenshot 2025-10-21 162111" src="https://github.com/user-attachments/assets/870691f5-d15c-4925-b79e-5897dc1630c0" />
+
            
 ## RESULT
 
@@ -60,7 +80,11 @@ Thus the program to check whether the two numbers are equal or not using simple 
 
 # EX-18-STRING-LOWERCASE-CONVERSION
 ## AIM
-Write a C Program to convert the given string into lowercase.
+To find the length of the string 'CARROT'
+
+OUTPUT:
+
+Length of Str is 6
 
 ## ALGORITHM
 1.	Start the program.
@@ -70,8 +94,19 @@ Write a C Program to convert the given string into lowercase.
 5.	Stop the program.
 
 ## PROGRAM
+#include<stdio.h>
+#include<string.h>
+int main()
+{
+    char str[100];
+    scanf("%s", str);
+    printf("Length of Str is %lu", strlen(str));
+}
+
 
 ## OUTPUT
+<img width="1361" height="869" alt="Screenshot 2025-10-21 162242" src="https://github.com/user-attachments/assets/c627d316-4df9-4bbb-8c77-df0f5e9221f2" />
+
 
 
 
@@ -84,7 +119,7 @@ Thus the program to convert the given string into lowercase has been executed su
 
 # EX-19-COUNT-OF-WORDS-IN-A-STRING
 ## AIM
-Write a C Program to count the total number of words in a given string using do While loop.
+Write a C program to convert a string from lowercase to uppercase without using string function using while loop.
 
 ## ALGORITHM
 1.	Start the program.
@@ -95,8 +130,23 @@ Write a C Program to count the total number of words in a given string using do 
 6.	Stop the program.
 
 ## PROGRAM
+#include <stdio.h>
+int main()
+{
+    char str[100];
+    scanf("%[^\n]", str);
+    int i=0;
+    while(str[i]!='\0')
+    {
+        if(str[i]>='a'&& str[i]<='z')
+        str[i]-=32;
+        i++;
+    }
+    printf("%s", str);
+}
 
 ## OUTPUT
+<img width="1348" height="866" alt="Screenshot 2025-10-21 162415" src="https://github.com/user-attachments/assets/586a628b-02a2-40bd-9dab-dce3910a1363" />
 
 
 
@@ -110,7 +160,7 @@ Thus the program to count the total number of words in a given string using do W
 
 # EX  -20 -COMPARING TWO STRINGS
 ## AIM
-write a Program to compare two strings without using strcmp().
+Write a C Program to perform bitwise AND operation of 6 & 7 integers. 
 ## ALGORITHM
 Step 1: Start the program.
 Step 2: Declare two character arrays c1 and c2 of size 100 to store the strings. Also, declare an integer variable
@@ -129,10 +179,18 @@ Step 7: After the loop, check the value of flag:
 Step 8: End the program.
 
 ## PROGRAM
+#include <stdio.h>
+int main()
+{
+    int a=6,b=7;
+    printf("Bitwise-AND result is = %d", a&b);
+    return 0;
+}
 
 
 ## OUTPUT
- 
+ <img width="1381" height="852" alt="Screenshot 2025-10-21 162517" src="https://github.com/user-attachments/assets/8cd486e7-ff85-4db9-a61b-25451f874f11" />
+
 
 ## RESULT
 Thus the C Program to compare two strings without using strcmp() has been executed successfully.
